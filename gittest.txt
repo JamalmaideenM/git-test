@@ -1,11 +1,14 @@
 task:
 =====
+
 ELB - load balancer types:
 1.application load balancer
 2.network load balancer
 3.gateway load balancer
 4.classic load balancer
+
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-types.html
+
 EFS
 Performance mode
 1.General Purpose
@@ -15,9 +18,11 @@ Throughput mode
 2.Provisioned
 https://docs.aws.amazon.com/efs/latest/ug/performance.html
 EBS vs EFS vs S3 vs E block storage
+
 Route53:
 DNS- Domain Name System
 53 - DNS port number
+
 what are the routing policies are in R53?
 1.create record-routing policy
   1.simple routing    - 
@@ -26,10 +31,12 @@ what are the routing policies are in R53?
   4.latency           - user in chennai app/web runs in mumbai&singapore region (user access nearest region)its called latency - quick response
   5.failover          - health check mendatery primary/secondary setup (primary will down secondary will take the responsibilities)
   6.multivalue answer -
+
 2.configure records-define simple records
   1.A type     - ip4 version
   2.AA type    - ip6 version
   3.CNAME type - hit www.greens.com - go www.amazon.com (user hits the greens page-greens hits the amazon page)
+
 3.DNS Resolver
   user hits the dns name (specified app/web),the resolver is converts dns name to ip address of the specified app/web
   www.amazon.com -(dns resolver)- 172.32.57.013
@@ -37,6 +44,7 @@ what are the routing policies are in R53?
   dns name mapping the ip adsress (specified app/web)
   user hits the dns name of the specified app/web the caches are lives in dns resolver to defined time interval is a ttl
   TTL- min-1min max-2days 
+
 ELB&ASG:
 ========
 EC2-load balancer
