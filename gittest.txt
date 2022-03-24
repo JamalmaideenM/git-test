@@ -1,5 +1,5 @@
 task:
-=====
+-----
 
 ELB - load balancer types:
 1.application load balancer
@@ -16,7 +16,9 @@ Performance mode
 Throughput mode
 1.Bursting
 2.Provisioned
+
 https://docs.aws.amazon.com/efs/latest/ug/performance.html
+
 EBS vs EFS vs S3 vs E block storage
 
 Route53:
@@ -47,13 +49,12 @@ what are the routing policies are in R53?
 
 
 ELB&ASG:
-========
+--------
 EC2-load balancer
    -auto scaling
 
 AMI-Amazon Machine Image-image of your machine(an executable image of an already existing ec2 instance)
 snapshot-volume backup on ec2 instance
-
 EBS-elastic block storage(add a addtional volumes on your instance)
 
 elastic load balancer:
