@@ -45,22 +45,28 @@ what are the routing policies are in R53?
   user hits the dns name of the specified app/web the caches are lives in dns resolver to defined time interval is a ttl
   TTL- min-1min max-2days 
 
+
 ELB&ASG:
 ========
 EC2-load balancer
    -auto scaling
+
 AMI-Amazon Machine Image-image of your machine(an executable image of an already existing ec2 instance)
 snapshot-volume backup on ec2 instance
+
 EBS-elastic block storage(add a addtional volumes on your instance)
+
 elastic load balancer:
 i have a one applivcation,it runs in 3 servers(vir.mach)
 here, that 3 servers are dedicated to load balance
 whenever the bulk or huge traffics(requests/users) are came the load balancer to split the requests to each servers
 (automatically distributes incoming application traffic across multiple virtual machines/servers)
+
 types of load balancer
 1.classic (osi-open system interconnection model)
 2.application
 3.network
 4.gateway
+
 load balancer is checks the servers health is good or week(health check)
 health check in load balancer is one of the advantage
