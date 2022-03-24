@@ -1,0 +1,58 @@
+task:
+=====
+ELB - load balancer types:
+1.application load balancer
+2.network load balancer
+3.gateway load balancer
+4.classic load balancer
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-types.html
+EFS
+Performance mode
+1.General Purpose
+2.max i/o
+Throughput mode
+1.Bursting
+2.Provisioned
+https://docs.aws.amazon.com/efs/latest/ug/performance.html
+EBS vs EFS vs S3 vs E block storage
+Route53:
+DNS- Domain Name System
+53 - DNS port number
+what are the routing policies are in R53?
+1.create record-routing policy
+  1.simple routing    - 
+  2.weighted          -
+  3.geolocation       - same dns name - different content depends on the region (geolocation)
+  4.latency           - user in chennai app/web runs in mumbai&singapore region (user access nearest region)its called latency - quick response
+  5.failover          - health check mendatery primary/secondary setup (primary will down secondary will take the responsibilities)
+  6.multivalue answer -
+2.configure records-define simple records
+  1.A type     - ip4 version
+  2.AA type    - ip6 version
+  3.CNAME type - hit www.greens.com - go www.amazon.com (user hits the greens page-greens hits the amazon page)
+3.DNS Resolver
+  user hits the dns name (specified app/web),the resolver is converts dns name to ip address of the specified app/web
+  www.amazon.com -(dns resolver)- 172.32.57.013
+  1.TTL- time to live
+  dns name mapping the ip adsress (specified app/web)
+  user hits the dns name of the specified app/web the caches are lives in dns resolver to defined time interval is a ttl
+  TTL- min-1min max-2days 
+ELB&ASG:
+========
+EC2-load balancer
+   -auto scaling
+AMI-Amazon Machine Image-image of your machine(an executable image of an already existing ec2 instance)
+snapshot-volume backup on ec2 instance
+EBS-elastic block storage(add a addtional volumes on your instance)
+elastic load balancer:
+i have a one applivcation,it runs in 3 servers(vir.mach)
+here, that 3 servers are dedicated to load balance
+whenever the bulk or huge traffics(requests/users) are came the load balancer to split the requests to each servers
+(automatically distributes incoming application traffic across multiple virtual machines/servers)
+types of load balancer
+1.classic (osi-open system interconnection model)
+2.application
+3.network
+4.gateway
+load balancer is checks the servers health is good or week(health check)
+health check in load balancer is one of the advantage
